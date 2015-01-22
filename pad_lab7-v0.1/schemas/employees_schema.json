@@ -1,0 +1,21 @@
+{
+  "type": "array",
+  "$schema": "http://www.json-schema.org/draft-03/schema",
+  "description": "Canonical representation of array of employees",
+  "items" : {
+    "type" : "object",
+    "properties": {
+      "id": { "type": "integer" },
+      "name": { "type": "string", "required": true },
+      "salary": { "type": "number" },
+      "department": { 
+        "type": "object",
+        "description": "Canonical representation of department",
+        "properties": {
+          "id": { "type": "integer" },
+          "name": { "type": "string", "required": true }
+        }
+      }
+    }
+  }
+}

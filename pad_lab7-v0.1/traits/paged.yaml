@@ -1,0 +1,13 @@
+#%RAML 0.8
+---
+
+displayName: paged
+queryParameters:
+  start:
+    displayName: start
+    description: start id of employee
+    type: number
+  limit:
+    displayName: limit
+    description: length of collection
+    type: number

@@ -1,0 +1,9 @@
+{
+  "id" : 1,
+  "name" : "Iaroslav Ciupin",
+  "salary" : 400,
+  "department" : {
+    "id" : 2,
+    "name" : "IT"
+  }
+}

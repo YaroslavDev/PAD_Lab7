@@ -1,0 +1,32 @@
+#%RAML 0.8
+---
+#title: Collection resouce type
+#version: v0.1
+
+type: base
+get:
+  is: [ paged ]
+  responses:
+    200:
+      body:
+        application/json:
+          example: <<exampleJSONCollection>>
+        application/xml:
+          example: <<exampleXMLCollection>>
+post:
+  body:
+    application/json:
+      schema: employeesJSON
+      example: <<exampleJSONCollection>>
+    application/xml:
+      schema: employeesXML
+      example: <<exampleXMLCollection>>
+  responses:
+    201:
+      body:                
+        application/json:
+          schema: employeesJSON
+          example: <<exampleJSONCollection>>
+        application/xml:
+          schema: employeesXML
+          example: <<exampleXMLCollection>>

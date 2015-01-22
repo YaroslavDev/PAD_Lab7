@@ -1,0 +1,30 @@
+#%RAML 0.8
+---
+title: pad_lab7
+version: v0.1
+baseUri: http://mocksvc.mulesoft.com/mocks/ccace647-05c3-443e-acb6-eaab0270b0e3
+
+schemas:
+  - employeesJSON: !include ../schemas/employees_schema.json
+  - employeesXML: !include ../schemas/employees_schema.xsd
+  - employeeJSON: !include ../schemas/employee_schema.json
+  - employeeXML: !include ../schemas/employee_schema.xsd
+  
+resourceTypes:
+  - base: !include resourceTypes/base.yaml
+  - collection: !include resourceTypes/collection.yaml
+  - member: !include resourceTypes/member.yaml
+                
+traits:
+  - paged: !include traits/paged.yaml
+    
+/employees:
+  type:
+    collection:
+      exampleJSONCollection: !include examples/employee_collection.json
+      exampleXMLCollection: !include examples/employee_collection.xml
+  /{id}:
+    type:
+      member:
+        exampleJSONMember: !include examples/employee_member.json
+        exampleXMLMember: !include examples/employee_member.xml

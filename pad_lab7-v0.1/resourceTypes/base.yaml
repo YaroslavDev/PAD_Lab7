@@ -1,0 +1,17 @@
+#%RAML 0.8
+---
+#title: pad_lab7
+#version: v0.1
+
+get?:
+  responses: &standardResponses
+    200:
+      description: OK
+put?:
+  responses: *standardResponses
+patch?:
+  responses: *standardResponses
+post?:
+  responses: *standardResponses
+delete?:
+  responses: *standardResponses

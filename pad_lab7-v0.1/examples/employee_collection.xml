@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<employees>
+	<employee>
+		<name>John Doe</name>
+		<department>IT</department>
+		<salary>300.0</salary>
+	</employee>
+	<employee>
+		<name>Peter Norweig</name>
+		<department>Sales</department>
+		<salary>100.0</salary>
+	</employee>
+</employees>
